@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sweet Schack</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Logo.jpg" alt="Sweet Schack Logo">
+        </a>    
+        <h1 class="home-title">Discover Our Flavors</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="flavors.html">Our Flavors</a>
+            <a href="shipping.html">Shipping & Delivery</a>
+            <a href="order.html">Order Form</a>
+            <a href ="faq.html">FAQs</a>
+        </div>
+    </header>
+    <div id="content">
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/banner.jpg" alt="assorted macarons">
+            </div>
+        </div>
+    </div>
+    <main class="flavors">    
+        <div id="photobook">
+            <img class='mySlides' src="images/blueberry.jpg" alt="blueberry macarons" width="250" height="325">
+            <img class='mySlides' src="images/caramel.jpg" alt="caramel macarons" width="250" height="325">
+            <img class='mySlides' src="images/chocolate.jpg" alt="chocolate macarons" width="250" height="325">
+            <img class='mySlides' src="images/lemon.jpg" alt="lemon macarons" width="250" height="325">
+            <img class='mySlides' src="images/lime.jpg" alt="key lime pie macarons" width="250" height="325">
+            <img class='mySlides' src="images/mint.jpg" alt="mint chocolate macarons" width="250" height="325">
+            <img class='mySlides' src="images/mocha.jpg" alt="mocha macarons" width="250" height="325">
+            <img class='mySlides' src="images/orange.jpg" alt="dreamcicle macarons" width="250" height="325">
+            <img class='mySlides' src="images/pb_cup.jpg" alt="peanut butter cup macarons" width="250" height="325">
+            <img class='mySlides' src="images/strawberry.jpg" alt="strawberry creme macarons" width="250" height="325">    
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+            
+            
+        <section id="flavor-grid">
+            <p id="flav-description">We feature 12 original flavors that are available year-round.  Check them out below!
+                <br>We also offer a unique Flavor of the Month as well. Check out our order form for latest flavor options! <br>Looking for something extra special? We have a variety of Premium Flavors that are made with specialty ingredients indulgent topping designs. 
+                <br>Many of our flavors are naturally gluten-free, and our macarons can be customized to accommodate other dietary restrictions as well. If you'd like more information, contact us to see what's possible!</p>
+            <h4 id="classic">Classic Flavors</h4>
+            <ul id="left-side">
+                <li>Strawberry Creme</li>
+                <li>Lemon</li>
+                <li>Dreamcicle</li>
+                <li>Mint Chocolate</li>
+                <li>Salted Caramel</li>
+                <li>Mocha</li>
+            </ul>
+            <ul id="right-side">
+                <li>Chocolate</li>
+                <li>Peanut Butter Cup</li>
+                <li>Blueberry Cheesecake</li>
+                <li>Key Lime Pie</li>
+                <li>Birthday Cake</li>
+                <li>Cinnamon Roll</li>
+            </ul>
+            <ul id="endcap1">
+                <li></li>
+                <li></li>
+                <li><li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h4 id="premium">Premium Flavors</h4>
+            <ul id="premium-left">
+                <li>Fruity Pebbles</li>
+                <li>Sour Watermelon</li>
+                <li>Coconut Creme Pie</li>
+                <li>Pink Lemonade</li>
+                <li>Carmel Apple</li>
+                <li>Jolly Rancher</li>
+            </ul>
+            <ul id="premium-right">
+                <li>Pumpkin Pie</li>
+                <li>S'Mores</li>
+                <li>Cotton Candy</li>
+                <li>Red Velvet</li>
+                <li>Jalapeno Raspberry</li>
+                <li>Pina Colada</li>
+            </ul>
+            <ul id="endcap2">
+                <li></li>
+                <li></li>
+                <li><li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+        <footer>
+            <p>&copy; 2023 - Edward Schack - All Rights Reserved</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com/TheSweetSchack" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+            </div>
+        </footer>
+</body>
+</html>
